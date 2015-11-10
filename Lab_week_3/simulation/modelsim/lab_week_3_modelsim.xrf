@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/97wes/Altera Projects/Lab_week_3/lab_week_3.bdf
+source_file = 1, C:/Users/97wes/Altera Projects/Lab_week_3/db/lab_week_3.cbx.xml
+design_name = lab_week_3
+instance = comp, \Output~output\, Output~output, lab_week_3, 1
+instance = comp, \D~input\, D~input, lab_week_3, 1
+instance = comp, \B~input\, B~input, lab_week_3, 1
+instance = comp, \A~input\, A~input, lab_week_3, 1
+instance = comp, \C~input\, C~input, lab_week_3, 1
+instance = comp, \inst7~0\, inst7~0, lab_week_3, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, lab_week_3, 1

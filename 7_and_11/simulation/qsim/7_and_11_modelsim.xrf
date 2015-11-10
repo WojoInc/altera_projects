@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/97wes/Altera Projects/7_and_11/7_and_11.bdf
+source_file = 1, C:/Users/97wes/Altera Projects/7_and_11/Waveform.vwf
+source_file = 1, C:/Users/97wes/Altera Projects/7_and_11/db/7_and_11.cbx.xml
+design_name = \7_and_11 
+instance = comp, \between_7_11~output , between_7_11~output, \7_and_11 , 1
+instance = comp, \C~input , C~input, \7_and_11 , 1
+instance = comp, \D~input , D~input, \7_and_11 , 1
+instance = comp, \B~input , B~input, \7_and_11 , 1
+instance = comp, \A~input , A~input, \7_and_11 , 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, \7_and_11 , 1

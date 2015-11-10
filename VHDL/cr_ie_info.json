@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 7",
+		"os_version" : "6.2"
+	},
+	"error" : {
+		"executable" : "quartus_eda",
+		"comment" : "not_applicable",
+		"error_message" : "bus_port->has_type()",
+		"source_file" : "/quartus/neto/tbo/tbo_common_vec_writer.cpp",
+		"line" : "280",
+		"stack_trace" : "\t0x7ff80f8202ed: NETO_TBO + 0x102ed (?get_port_type@TBO_COMMON_VEC_WRITER@@IEAAPEAVHDB_TYPE@@PEAVHDB_INSTANCE_NAME@@@Z + 0x6d)\n\t0x7ff80f819fb4: NETO_TBO + 0x9fb4 (?cache_ports_info@TBO_VLG_VEC_WRITER@@IEAAXXZ + 0x1a4)\n\t0x7ff80f829ba9: NETO_TBO + 0x19ba9 (?write_module@TBO_VLG_VEC_SELFCHK_WRITER@@QEAAXXZ + 0x29)\n\t0x7ff80f827e90: NETO_TBO + 0x17e90 (?write_file@TBO_VLG_VEC_SELFCHK_WRITER@@UEAA_NXZ + 0x240)\n\t0x7ff80f828858: NETO_TBO + 0x18858 (?write_file@TBO_WRITER@@QEAA_NPEBVVDB_DATA@@PEAVHDB_CMP_ACTION_PT_INSTANCE@@W4TBO_DATA_TYPE@@AEBVBIG_TIME@@@Z + 0x388)\n\t0x7ff80f839f18: NETO_TBO + 0x29f18 (?write_testbench_file@TBO_BUILDER@@QEAA?AW4TBO_WRITE_STATUS@@XZ + 0x1e8)\n\t0x7ff776847a09: quartus_eda + 0x7a09 (qneto_eda_pt_unregister_tcl + 0x2999)\n\t0x7ff776846b3e: quartus_eda + 0x6b3e (qneto_eda_pt_unregister_tcl + 0x1ace)\n\t0x7ff776861507: quartus_eda + 0x21507 (qneto_eda_pt_unregister_tcl + 0x1c497)\n\t0x7ff833b5252c: comp_qexe + 0x1252c (?qexe_apply_ini_vars@@YAXXZ + 0x245c)\n\t0x7ff833b57872: comp_qexe + 0x17872 (?qexe_process_cmdline_arguments@@YA_NPEAVQEXE_CMDLINE@@HPEAPEBD@Z + 0x2762)\n\t0x7ff833b58601: comp_qexe + 0x18601 (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0xc1)\n\t0x7ff776866b8d: quartus_eda + 0x26b8d (qneto_eda_pt_unregister_tcl + 0x21b1d)\n\t0x7ff840cfcbe8: CCL_MSG + 0xcbe8 (?msg_initialize_out_of_memory_handler@@YAXXZ + 0x378)\n\t0x7ff840cfe31c: CCL_MSG + 0xe31c (?msg_set_stack_size@@YAXH@Z + 0x7c)\n\t0x7ff840e54bac: ccl_mem + 0x4bac (?mem_malloc_wrapper@@YAPEAX_KPEAVMEM_TRACKER_THUNK@@PEBD@Z + 0x18c)\n\t0x7ff840cfc831: CCL_MSG + 0xc831 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff77686ace6: quartus_eda + 0x2ace6 (qneto_eda_pt_register_tcl + 0x1ac6)\n\t0x7ff84ea82d91: KERNEL32 + 0x12d91 (BaseThreadInitThunk + 0x21)\n\t0x7ff84f729f63: ntdll + 0x9f63 (RtlUserThreadStart + 0x33)\n",
+		"subsystem" : "TBO"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "15.0.2",
+		"build" : "153",
+		"edition" : "Web Edition"
+	}
+}

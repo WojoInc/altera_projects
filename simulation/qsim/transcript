@@ -1,0 +1,32 @@
+# do Tutorial.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:25:13 on Sep 17,2015
+# vlog -work work Tutorial.vo 
+# -- Compiling module Tutorial
+# 
+# Top level modules:
+# 	Tutorial
+# End time: 16:25:13 on Sep 17,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 16:25:13 on Sep 17,2015
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module Tutorial_vlg_sample_tst
+# -- Compiling module Tutorial_vlg_check_tst
+# -- Compiling module Tutorial_vlg_vec_tst
+# 
+# Top level modules:
+# 	Tutorial_vlg_vec_tst
+# End time: 16:25:13 on Sep 17,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "Tutorial.do" 
+# Start time: 16:25:13 on Sep 17,2015
+# Loading work.Tutorial_vlg_vec_tst
+# Loading work.Tutorial
+# Loading work.Tutorial_vlg_sample_tst
+# Loading work.Tutorial_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(153)
+#    Time: 1 us  Iteration: 0  Instance: /Tutorial_vlg_vec_tst/tb_out
+# End time: 16:25:14 on Sep 17,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

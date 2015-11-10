@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.std_logic_1164;
+
+entity Prelab1 is
+	port(
+		A : in std_logic;
+		B : in std_logic;
+		C : in std_logic;
+		D : in std_logic;
+		Y : out std_logic;
+	);
+end Prelab1
+
+architecture behavioural of Prelab1 is
+
+begin
+Y <= ((not A) and (not B) and C) or ((not A) and C and (not D))
+		or (A and C and D) or (A and B and (not D));
+end behavioural

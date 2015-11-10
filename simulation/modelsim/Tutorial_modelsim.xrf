@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/97wes/Altera Projects/db/Tutorial.bdf
+source_file = 1, C:/Users/97wes/Altera Projects/db/Waveform.vwf
+source_file = 1, C:/Users/97wes/Altera Projects/db/Tutorial.cbx.xml
+design_name = Tutorial
+instance = comp, \pin_name1~output\, pin_name1~output, Tutorial, 1
+instance = comp, \C~input\, C~input, Tutorial, 1
+instance = comp, \B~input\, B~input, Tutorial, 1
+instance = comp, \A~input\, A~input, Tutorial, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, Tutorial, 1

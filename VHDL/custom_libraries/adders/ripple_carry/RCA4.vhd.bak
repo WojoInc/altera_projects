@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity RCA4 is 
+		port(
+			X : in std_logic_vector(3 downto 0); -- where 0 is least significant
+			Y : in std_logic_vector(3 downto 0); 
+			Z : std_logic_vector(3 downto 0);
+			signal carIn : in std_logic;
+			carOut : out std_logic
+		);
+
+end entity;
+
+architecture STRUCTURAL of RCA4 is 
+	signal FA1ci, FA2ci, FA3ci, FA4ci : std_logic:='0';
+	carIn:='0';
+begin
+
+FA1 : entity work.fulladder port map(X(0),Y(0),Z(0),carIn,FA2ci);
+FA2 : entity work.fulladder port map(X(1),Y(1),Z(1),FA2ci,FA3ci);
+FA3 : entity work.fulladder port map(X(2),Y(2),Z(2),FA3ci,FA4ci);
+FA4 : entity work.fulladder port map(X(3),Y(3),Z(3),FA4ci,carOut);
+
+end behavioural;

@@ -1,0 +1,36 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Lab is
+	port(
+		S : in std_logic_vector(3 downto 0); --define 4bit vector
+		Y : out std_logic_vector(3 downto 0)
+	);
+
+end Lab;
+
+
+architecture dataflow of Lab is
+	signal HIGH : std_logic:='1';
+	signal LOW : std_logic:='0';
+	
+begin
+	with S select
+	Y <= "0000" when "0000",
+			"0001" when "0001",
+			"0001" when "0010",
+			"0001" when "0100",
+			"0001" when "1000",
+			"0011" when "0011",
+			"0011" when "0110",
+			"0011" when "1100",
+			"0011" when "1001",
+			"0011" when "0101",
+			"0011" when "1010",
+			"0111" when "0111",
+			"0111" when "1110",
+			"0111" when "1011",
+			"0111" when "1101",
+			"1111" when "1111";
+			
+end dataflow;

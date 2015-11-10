@@ -1,0 +1,12 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity AREXTNDR is
+
+end entity;
+
+architecture STRUCTURAL of AREXTNDR is
+
+begin
+
+end architecture;

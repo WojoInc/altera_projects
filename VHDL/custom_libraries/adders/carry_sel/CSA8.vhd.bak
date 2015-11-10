@@ -1,0 +1,26 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity CSA8 is
+	port(
+			X,Y : in std_logic_vector (7 downto 0);
+			Z : out std_logic_vector (7 downto 0);
+			cIn : in std_logic;
+			cOut :out std_logic;
+	);
+end entity
+
+architecture structural of CSA8 is 
+
+begin
+	
+MUX_GEN : for I in 9 downto 0 generate
+	
+	MUX_X : entity work.MUX2TO1 port map()
+
+	end generate;
+	
+RCA4_GEN : for I in 15 downto 0 generate
+
+	RCA4_X : entity work.RCA4 port map()
+end architecture;

@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity EnergyPack is
+	port(
+		S : in std_logic_vector(3 downto 0);
+		Y : out std_logic
+	);
+
+end EnergyPack;
+
+architecture behavioural of EnergyPack is
+	signal HIGH : std_logic:='1';
+	signal LOW : std_logic:='0';
+begin
+	with S select
+	Y<= HIGH when "0001",
+		HIGH when "0010",
+		HIGH when "0011",
+		HIGH when "0100",
+		HIGH when "0110",
+		HIGH when "0111",
+		HIGH when "1000",
+		HIGH when "1100",
+		HIGH when "1110",
+		HIGH when "1111",
+		LOW when others;
+end behavioural;

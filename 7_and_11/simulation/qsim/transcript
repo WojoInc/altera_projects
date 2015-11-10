@@ -1,0 +1,34 @@
+# do between7_and_11.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:11:25 on Sep 24,2015
+# vlog -work work between7_and_11.vo 
+# -- Compiling module between7_and_11
+# 
+# Top level modules:
+# 	between7_and_11
+# End time: 12:11:25 on Sep 24,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 12:11:25 on Sep 24,2015
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module between7_and_11_vlg_sample_tst
+# -- Compiling module between7_and_11_vlg_check_tst
+# -- Compiling module between7_and_11_vlg_vec_tst
+# 
+# Top level modules:
+# 	between7_and_11_vlg_vec_tst
+# End time: 12:11:25 on Sep 24,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "between7_and_11.do" 
+# Start time: 12:11:25 on Sep 24,2015
+# Loading work.between7_and_11_vlg_vec_tst
+# Loading work.between7_and_11
+# Loading work.between7_and_11_vlg_sample_tst
+# Loading work.between7_and_11_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(155)
+#    Time: 1 us  Iteration: 0  Instance: /between7_and_11_vlg_vec_tst/tb_out
+# End time: 12:11:25 on Sep 24,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

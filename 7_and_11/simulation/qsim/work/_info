@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/97wes/Altera Projects/7_and_11/simulation/qsim
+v\7_and_11 
+!s110 1443114322
+!i10b 1
+!s100 5Y9_VcW@>5L8zHhGH5K2]3
+Ibn]3j60_=6BH0PA8=z@I62
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1443114321
+87_and_11.vo
+F7_and_11.vo
+Z2 L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1443114322.759000
+!s107 7_and_11.vo|
+!s90 -work|work|7_and_11.vo|
+!i113 1
+Z4 o-work work
+n@1347_and_11@040
+vbetween7_and_11
+Z5 !s110 1443114685
+!i10b 1
+!s100 0z<bzJWP0^W=ClOg__`<13
+I5eL01NK<Ib1I?ObVENeRX3
+R1
+R0
+w1443114684
+8between7_and_11.vo
+Fbetween7_and_11.vo
+R2
+R3
+r1
+!s85 0
+31
+!s108 1443114685.343000
+!s107 between7_and_11.vo|
+!s90 -work|work|between7_and_11.vo|
+!i113 1
+R4
+vbetween7_and_11_vlg_check_tst
+R5
+!i10b 1
+!s100 FGP;7z]82[_NJlMHH6UDM1
+InI72ZhaY_RAg`Sd77QQKo2
+R1
+R0
+Z6 w1443114682
+Z7 8Waveform.vwf.vt
+Z8 FWaveform.vwf.vt
+L0 64
+R3
+r1
+!s85 0
+31
+Z9 !s108 1443114685.390000
+Z10 !s107 Waveform.vwf.vt|
+Z11 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vbetween7_and_11_vlg_sample_tst
+R5
+!i10b 1
+!s100 aK8<7YKDa2MgHX@K3dGle3
+IEM;D8Q9<88i]cK:XPPd1<1
+R1
+R0
+R6
+R7
+R8
+L0 30
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R4
+vbetween7_and_11_vlg_vec_tst
+R5
+!i10b 1
+!s100 DGGa[6ki8eYjXke1AJinK1
+IW_lXP61mi4PgZ>YgCF9iY1
+R1
+R0
+R6
+R7
+R8
+L0 159
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R4

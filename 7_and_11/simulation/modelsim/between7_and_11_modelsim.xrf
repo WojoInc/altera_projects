@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, 7_and_11.bdf
+source_file = 1, C:/Users/97wes/Altera Projects/7_and_11/Waveform.vwf
+source_file = 1, C:/Users/97wes/Altera Projects/7_and_11/between7_and_11.bdf
+design_name = between7_and_11
+instance = comp, \between_7_11~output\, between_7_11~output, between7_and_11, 1
+instance = comp, \C~input\, C~input, between7_and_11, 1
+instance = comp, \D~input\, D~input, between7_and_11, 1
+instance = comp, \B~input\, B~input, between7_and_11, 1
+instance = comp, \A~input\, A~input, between7_and_11, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, between7_and_11, 1

@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity MUX16TO1 is
+	port(
+		D : in std_logic_vector(15 downto 0);
+		S : in std_logic_vector(4 downto 0);
+		Y : out std_logic
+	);
+end entity;
+
+architecture structural of MUX16TO1 is
+	signal w1,w2 : std_logic:='0';
+begin
+	MUX0 : entity work.MUX8TO1 port map(D(0),D(1),D(2),D(3),D(4),D(5),D(6),D(7),S(0),w1);
+	MUX1 : entity work.MUX8TO1 port map(D(8),D(9),D(10),D(11),D(12),D(13),D(14),D(15),S(0),w2);
+	with S(1) select
+	Y <= w1 when '0',
+		w2 when '1';
+	
+end architecture;

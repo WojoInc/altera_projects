@@ -1,0 +1,9 @@
+|greater_than_4
+Greater_than_4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+D => inst1.IN0
+B => inst1.IN1
+B => inst.IN1
+C => inst.IN0
+
+

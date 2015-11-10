@@ -1,0 +1,36 @@
+---------------------------------
+--Name: TJ Wesolowski
+--Course: 1901-031
+--Instructor: Dr. Livingston
+--Assignment: Lab 8
+--Filename: RCA4.vhd
+--Date: 10/29/15
+---------------------------------
+
+
+-------------------------------
+--Libraries Included:
+--IEEE - included for standard logic library
+-------------------------------
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+---------------------------
+--Entity: RCA4
+--Description: Simulates a circuit which adds two four bit integers. Made of 4 full adders, 
+--the circuit will return a high signal to carOut to indicate overflow.
+----------------------------
+entity Prelab is 
+		port(
+			X : in std_logic_vector(3 downto 0); -- where 0 is least significant
+			Y : in std_logic_vector(1 downto 0); 
+			Z : out std_logic_vector(3 downto 0);
+			signal carIn : in std_logic:='0';
+			carOut : out std_logic
+		);
+
+end entity;
+
+architecture structural of Prelab is 
+	RCA4 : entity work.RCA4 port map(X,Y(1 downto 0)=> not Y(1 downto 0),Y(3 downto 2) => "00",carIn,carOut);
+end architecture;

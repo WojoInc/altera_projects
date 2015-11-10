@@ -1,0 +1,10 @@
+|7_and_11
+between_7_11 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst3.IN0
+B => inst4.IN1
+B => inst1.IN0
+C => inst5.IN0
+D => inst5.IN1
+
+

@@ -1,0 +1,16 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Prelab9 is
+	port(
+			Y : in std_logic_vector(3 downto 0);
+			Z : out std_logic_vector(4 downto 0);
+	);
+end entity;
+
+architecture structural of Prelab9 is
+	signal X : std_logic_vector(3 downto 0):="0101";
+begin
+CLA4_0 : entity work.CLA4 port map (X,Y,Z(3 downto 0),'0',Z(4));
+
+end architecture;

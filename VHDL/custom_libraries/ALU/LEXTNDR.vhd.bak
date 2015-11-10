@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity LEXTNDR is
+	port(
+			X : in std_logic_vector(31 downto 0);
+			Y : in std_logic_vector(31 downto 0);
+			S : in std_logic_vector(2 downto 0);
+			Z : out std_logic_vector(31 downto 0);
+	);
+end entity;
+
+architecture STRUCTURAL of LEXTNDR is
+
+begin
+MUX8_0 : entity work.MUX8TO1 port map ()
+
+end architecture;

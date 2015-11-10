@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+entity halfadder is
+	port(
+			X : in std_logic;
+			Y : in std_logic;
+			sum : out std_logic_vector(1 downto 0);
+			car : out std_logic;
+	)
+end entity;
+
+architecture behavioural of halfadder is
+
+begin
+sum <= X xor Y;
+car <= X and Y;
+
+end behavioural;

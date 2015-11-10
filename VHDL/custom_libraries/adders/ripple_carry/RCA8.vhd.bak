@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity RCA8 is 
+		port(
+			X : in std_logic_vector(7 downto 0); -- where 0 is least significant
+			Y : in std_logic_vector(7 downto 0); 
+			Z : out std_logic_vector(7 downto 0);
+			signal carIn : in std_logic:='0';
+			carOut : out std_logic
+		);
+
+end entity;
+
+architecture STRUCTURAL of RCA8 is 
+	signal RCA4_1_ci : std_logic:='0';
+	
+begin
+
+RCA4_0 : entity work.fulladder port map(X(3 downto 0),Y(3 downto 0),Z(3 downto 0),carIn,RCA4_1_ci);
+RCA4_1 : entity work.fulladder port map(X(7 downto 4),Y(7 downto 4),Z(7 downto 4),carIn,carOut);
+
+end STRUCTURAL;

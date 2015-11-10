@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/97wes/Altera Projects/middle_detector/middle_detector.bdf
+source_file = 1, C:/Users/97wes/Altera Projects/middle_detector/Waveform.vwf
+source_file = 1, C:/Users/97wes/Altera Projects/middle_detector/db/middle_detector.cbx.xml
+design_name = middle_detector
+instance = comp, \is_middle~output , is_middle~output, middle_detector, 1
+instance = comp, \pin_name3~output , pin_name3~output, middle_detector, 1
+instance = comp, \pin_name4~output , pin_name4~output, middle_detector, 1
+instance = comp, \Test1~output , Test1~output, middle_detector, 1
+instance = comp, \Test2~output , Test2~output, middle_detector, 1
+instance = comp, \C~input , C~input, middle_detector, 1
+instance = comp, \D~input , D~input, middle_detector, 1
+instance = comp, \B~input , B~input, middle_detector, 1
+instance = comp, \A~input , A~input, middle_detector, 1
+instance = comp, \inst~0 , inst~0, middle_detector, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, middle_detector, 1

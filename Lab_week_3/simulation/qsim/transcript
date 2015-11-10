@@ -1,0 +1,32 @@
+# do lab_week_3.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:32:43 on Sep 24,2015
+# vlog -work work lab_week_3.vo 
+# -- Compiling module lab_week_3
+# 
+# Top level modules:
+# 	lab_week_3
+# End time: 13:32:43 on Sep 24,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 13:32:43 on Sep 24,2015
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module lab_week_3_vlg_sample_tst
+# -- Compiling module lab_week_3_vlg_check_tst
+# -- Compiling module lab_week_3_vlg_vec_tst
+# 
+# Top level modules:
+# 	lab_week_3_vlg_vec_tst
+# End time: 13:32:43 on Sep 24,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "lab_week_3.do" 
+# Start time: 13:32:43 on Sep 24,2015
+# Loading work.lab_week_3_vlg_vec_tst
+# Loading work.lab_week_3
+# Loading work.lab_week_3_vlg_sample_tst
+# Loading work.lab_week_3_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(155)
+#    Time: 1 us  Iteration: 0  Instance: /lab_week_3_vlg_vec_tst/tb_out
+# End time: 13:32:43 on Sep 24,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

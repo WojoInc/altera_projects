@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Palendrome is
+	port(
+		A : in std_logic;
+		B : in std_logic;
+		C : in std_logic;
+		D : in std_logic;
+		S : in std_logic_vector(4 downto 1);
+		Y : out std_logic
+	);
+
+end Palendrome;
+
+architecture behavioural of Palendrome is
+
+begin
+	with S select
+	Y<= 1 when "0000";
+end behavioural;

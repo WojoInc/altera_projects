@@ -1,0 +1,31 @@
+library IEEE;
+library MUX;
+use IEEE.std_logic_1164.all;
+use MUX.all;
+
+entity MUX4TO1 is
+--mux function definition begins here
+	port(
+		D0  : in std_logic;
+		D1  : in std_logic;
+		D2  : in std_logic;
+		D3  : in std_logic;
+		S0  : in std_logic;
+		S1  : in std_logic;
+		Y  : out std_logic
+
+	);
+end entity MUX4TO1;
+
+architecture DEFAULT of MUX4TO1 is
+--MUX behaviour is described here
+	signal w1,w2 : std_logic:='0';
+begin
+	MUX0 : entity work.MUX2TO1 port map (D0,D1,S0,w1);
+	MUX1 : entity work.MUX2TO1 port map (D2,D3,S0,w2);
+	with S1 select
+	Y<= w1 when '0',
+		w2 when '1';
+	
+
+end DEFAULT;

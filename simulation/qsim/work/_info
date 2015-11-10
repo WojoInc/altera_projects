@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/97wes/Altera Projects/simulation/qsim
+vTutorial
+Z1 !s110 1442525113
+!i10b 1
+!s100 N@GPU_05MDd1]DKg1190>2
+IXE>kVKnNEXV^ai;_o6L?=0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1442525112
+8Tutorial.vo
+FTutorial.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1442525113.565000
+!s107 Tutorial.vo|
+!s90 -work|work|Tutorial.vo|
+!i113 1
+Z4 o-work work
+n@tutorial
+vTutorial_vlg_check_tst
+R1
+!i10b 1
+!s100 dzdVWdEdlDm`;[=46`bQ[0
+I0F<>;eQKM`M6YHJNJ2dj<0
+R2
+R0
+Z5 w1442525109
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1442525113.675000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+n@tutorial_vlg_check_tst
+vTutorial_vlg_sample_tst
+R1
+!i10b 1
+!s100 fDVOK?]_U4;>GPYi8FDz]2
+I[D6^gLFD8Ra2B<3^g3E7E3
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@tutorial_vlg_sample_tst
+vTutorial_vlg_vec_tst
+R1
+!i10b 1
+!s100 doOa@:If5g2U9ji:O=>?Y1
+IOIPJ^OkM0g^JVeB_2B0WH1
+R2
+R0
+R5
+R6
+R7
+L0 157
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@tutorial_vlg_vec_tst

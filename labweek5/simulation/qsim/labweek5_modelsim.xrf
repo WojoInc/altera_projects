@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/97wes/Altera Projects/labweek5/labweek5.bdf
+source_file = 1, C:/Users/97wes/Altera Projects/labweek5/Waveform.vwf
+source_file = 1, C:/Users/97wes/Altera Projects/labweek5/db/labweek5.cbx.xml
+design_name = labweek5
+instance = comp, \B~output , B~output, labweek5, 1
+instance = comp, \I~output , I~output, labweek5, 1
+instance = comp, \C~input , C~input, labweek5, 1
+instance = comp, \D~input , D~input, labweek5, 1
+instance = comp, \H~input , H~input, labweek5, 1
+instance = comp, \inst7~0 , inst7~0, labweek5, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, labweek5, 1

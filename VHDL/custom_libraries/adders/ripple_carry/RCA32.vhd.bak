@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity RCA32 is 
+		port(
+			X : in std_logic_vector(31 downto 0); -- where 0 is least significant
+			Y : in std_logic_vector(31 downto 0); 
+			Z : out std_logic_vector(31 downto 0);
+			signal carIn : in std_logic:='0';
+			carOut : out std_logic
+		);
+
+end entity;
+
+architecture STRUCTURAL of RCA32 is 
+	signal RCA8_1_ci,RCA8_2_ci,RCA8_3_ci : std_logic:='0';
+	
+begin
+
+RCA8_0 : entity work.fulladder port map(X(7 downto 0),Y(7 downto 0),Z(7 downto 0),carIn,RCA8_1_ci);
+RCA8_1 : entity work.fulladder port map(X(15 downto 8),Y(15 downto 8),Z(15 downto 8),RCA8_1_ci,RCA8_2_ci);
+RCA8_2 : entity work.fulladder port map(X(23 downto 16),Y(23 downto 16),Z(23 downto 16),RCA8_2_ci,RCA8_3_ci);
+RCA8_3 : entity work.fulladder port map(X(31 downto 24),Y(31 downto 24),Z(31 downto 24),RCA8_3_ci,carOut);
+
+end STRUCTURAL;

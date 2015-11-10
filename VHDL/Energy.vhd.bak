@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity Palendrome is
+	port(
+		S : in std_logic_vector(3 downto 0); --define 4bit vector
+		Y : out std_logic_vector(3 downto 0);
+	);
+
+end Palendrome;
+
+architecture behavioural of Palendrome is
+	signal HIGH : std_logic:='1';
+	signal LOW : std_logic:='0';
+begin
+	count : integer:= 0;
+	for i S'range loop
+		if S(i) = '1' then
+			count = count + 1;
+		end if;
+	end loop;
+	
+	case count is
+		when 4 =>	Y <= "1111";
+		when 3 =>	Y <= "0111";
+		when 2 =>	Y <= "0011";
+		when 1 =>	Y <= "0001";
+		when 0 =>	Y <= "0000";
+	end case;
+end behavioural;

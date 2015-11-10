@@ -1,0 +1,27 @@
+library IEEE;
+use library IEEE.std_logic_1164.all;
+
+entity CLA4 is 
+	port(
+			X,Y : in std_logic_vector(3 downto 0);
+			Z : out std_logic_vector(3 downto 0);
+			cIn : in std_logic;
+			cOut : out std_logic;
+	);
+end entity;
+
+architecture structural	of CLA4 is
+	signal carry_wire : std_logic_vector(4 downto 0);
+begin
+
+CLC_0 : entity work.CLC port map(X,Y,cIn,carry_wire);
+
+FA_GEN : for I in 3 downto 0 generate
+	
+	FAX : entity work.fulladder port map(X(I),Y(I),Z(I),carry_wire(0));
+	
+	end generate;
+
+cOut <= carry_wire(4);
+
+end architecture;

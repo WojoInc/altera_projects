@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity fulladder is 
+		port(
+			X : in std_logic;
+			Y : in std_logic;
+			sum : out std_logic;
+			carIn : in std_logic;
+			carOut : out std_logic
+		);
+
+end entity;
+
+architecture behavioural of fulladder is 
+	signal sum1,car1,car2 :std_logic:='0';
+begin
+HA1 : entity work.halfadder port map(X,Y,sum1,car1);
+HA2 : entity work.halfadder port map(sum1,cin,sum,car2);
+carOut <= car2;
+end behavioural;
